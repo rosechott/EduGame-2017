@@ -1,0 +1,141 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta charset="utf-8">
+        <title>Level 1</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <html lang="en">
+                    <!--below code from https://developers.google.com/maps/documentation/javascript/examples/map-simple-->
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojfFj6bNS7s7JLzh7feU3uCtzHrBZ2o8&callback=initMap1">
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojfFj6bNS7s7JLzh7feU3uCtzHrBZ2o8&callback=initMap2">
+            </script>
+
+
+
+    <style type="text/css">
+      html, body {height:100%}
+    </style>
+
+
+                    <!--above code from https://developers.google.com/maps/documentation/javascript/examples/map-simple-->
+
+
+    </head>
+    <body onload="initMap1(), initMap2();">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    <script src="EduGame_Level_1.js"></script>
+
+
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fxed-top" style="margin:20px;">
+            <div>
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#">The Silk Road</a></li>
+                    <li><a href="game.html" class="navbar-brand">LOGO</a></li>
+                    <li role="presentation"><a href="#">Intro</a></li>
+                    <li role="presentation"><a href="#">Game</a></li>
+                    <li role="presentation"><a href="#">Rank</a></li>
+                </ul>
+
+            </div>	
+        </nav>
+
+        <!-- body div -->
+
+        <div>
+            <div style="border: 1px solid; margin:20px; padding: 20px;">			
+
+
+                <div class="row" >
+                    <!-- google map block  -->
+                    <div class="col-md-8" style=" border: 1px solid; height: 100%">				
+                        <div>
+
+                    <div id="map1" style="height: 390px"></div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- feedback block -->
+                    <div class="col-md-4" style="border: 1px solid; padding:10px;">
+                        <div>
+                            pictures
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <!-- Question block -->
+                    <div class="col-md-8 " style="border: 1px solid; padding:10px;" >
+                        <!-- character -->
+                        <div class="col-md-3 " style="background-color: LightSkyBlue;  border: 1px solid; padding:10px; ">
+
+                            <img src="image/him.png" class="img-responsive center-block" alt="small image/gif">
+
+                        </div>
+                        <!-- Question board -->
+                        <div class="col-md-9" style="background-color:  MediumAquaMarine;border: 1px solid; padding:10px; " >
+                            <label>
+                                Question One:
+                            </label>
+                            <div style="background-color:#cce6ff; border: 1px solid; padding:10px;" id="Question1-1">
+                                Marco Polo’s traveling party had to purchase <b>4</b> camels from a trader in Acre.  They were not the only travelers that needed camels for a journey, however.  The same day that they purchased their camels, a second party purchased <b>40</b> camels and a third party purchased <b>8</b>.  If the trader who owned the camels originally had <b>156</b> camels, how many camels did he finished the sales to these three parties?
+                            </div>
+
+                            <!-- radiobuttons -->
+
+                            <form action=" " style="margin: 20px;">
+                                <div class="col-md-3" >
+                                    <input type="radio" name="answer" value="104" id="answer"> 104	
+                                </div>
+                                <div class="col-md-3" >
+                                    <input type="radio" name="answer" value="112" id="answer"> 112
+                                </div>
+                                <div class="col-md-3" >
+                                    <input type="radio" name="answer" value="124" id="answer"> 124
+                                </div>
+                                <div class="col-md-3" >
+                                    <input type="radio" name="answer" value="108" id="answer"> 108
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- overall map block -->
+
+
+                    <div class="col-md-4" style="background-color:PaleTurquoise;border: 1px solid; padding:10px; height: 100%">		
+
+                          <div id="map2" style="height: 218px"></div>
+
+
+                    </div>
+
+                </div>		
+
+            </div>
+
+        </div>
+
+
+        <footer id="footer" style="margin:20px;"> 
+            <div class="container">
+                <p>
+                    <abbr title="Email: ">Email:</abbr> groupe@st-andrews.ac.uk<br>
+                </p>					
+            </div>
+        </footer>
+
+    </body>
+    </html>
