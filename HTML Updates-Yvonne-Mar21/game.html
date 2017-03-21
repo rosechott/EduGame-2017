@@ -1,0 +1,144 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    	<meta charset="utf-8">
+    	<title>Game</title>
+    	<link rel="stylesheet" href="css/bootstrap.css">
+    	<link rel="stylesheet" href="css/style.css">
+    	<html lang="en">
+
+    	<!--below code from https://developers.google.com/maps/documentation/javascript/examples/map-simple-->
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojfFj6bNS7s7JLzh7feU3uCtzHrBZ2o8&callback=initMap1">
+    	</script>
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojfFj6bNS7s7JLzh7feU3uCtzHrBZ2o8&callback=initMap2">
+    	</script>
+
+    	<style type="text/css">
+    		html, body {height:100%}
+    	</style>
+    	<!--above code from https://developers.google.com/maps/documentation/javascript/examples/map-simple-->
+    </head>
+
+    <body onload="initMap1(), initMap2();">
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+
+    	<script src="EduGame_Level_1.js"></script>
+    	
+    	<!-- <script src="EduGame_Level_2.js"></script> -->
+    	<!-- <script src="EduGame_Level_3.js"></script> -->
+
+    	<div class="container">
+    		<img src="image/Logo1.png" class="img-responsive center-block" alt="The Silk Road">
+    	</div>
+
+    	<!-- Navigation -->
+    	<div class="container">
+    		<nav class="navbar navbar-default navbar-fxed-top" style="margin:20px;" role="navigation">
+
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse"> 
+    					<span class="sr-only">Toggle Navigation</span>
+    					<span class="icon-bar"></span> 
+    					<span class="icon-bar"></span> 
+    					<span class="icon-bar"></span> 
+    				</button> 
+    				<a href="intro.html" class="navbar-brand">The Silk Road</a> 
+    			</div>
+    			<div class="collapse navbar-collapse" id="example-navbar-collapse"> 
+    				<!-- Nav tabs -->
+    				<ul class="nav nav-tabs nav-justified">
+    					<li ><a href="intro.html">Intro</a></li>
+    					<li class="active"><a href="game.html">Game</a></li>
+    					<li><a href="rank.html">Rank</a></li>
+
+    					<!-- User Info -->
+    					<li class="dropdown">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown">  						User
+    							<span class="caret"></span>
+    						</a>
+    						<ul class="dropdown-menu" style="text-align: center;" > 			
+    							<li>Score</li>
+    							<li>Level</li>
+    							<li>Time</li>
+    							<li><a href="#">Exit</a></li>
+    						</ul>
+    					</li>
+    				</ul>
+    			</div>
+    		</nav>
+    	</div>
+
+
+    	<!-- body div -->
+    	<div class="container">
+    		<div style="border: 1px solid; margin:20px; padding: 20px;">
+
+    			<div class="row" >
+    				<!-- google map block  -->
+    				<div class="col-md-8" style=" border: 1px solid; padding:10px; height: 100%">				
+    					<div>
+    						<div id="map1" style="height: 390px"></div>
+    					</div>
+    				</div>
+
+    				<!-- feedback block -->
+    				<div class="col-md-4" style="border: 1px solid; padding:10px;">
+    					<div>
+    						<img src="image/boat_level1.png" class="img-responsive center-block" alt="boat" >
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="row">
+    				<!-- Question block -->
+    				<div class="col-md-8 " style="border: 1px solid; padding:10px;" >
+    					<!-- character -->
+    					<div class="col-md-4">
+    						<img src="image/1.jpg" class="img-responsive center-block" alt="small image/gif" style="vertical-align: middle;">
+    					</div>
+
+    					<!-- Question board -->
+    					<div class="col-md-8" style="border: 1px solid; padding:10px; text-align: justify;" >
+    						<label>
+    							Question One:
+    						</label>
+    						<div style="border: 1px solid; padding:10px;" id="Question1-1">
+    							Marco Polo’s traveling party had to purchase <b>4</b> camels from a trader in Acre.  They were not the only travelers that needed camels for a journey, however.  The same day that they purchased their camels, a second party purchased <b>40</b> camels and a third party purchased <b>8</b>.  If the trader who owned the camels originally had <b>156</b> camels, how many camels did he finished the sales to these three parties?
+    						</div>
+
+    						<!-- radiobuttons -->
+    						<form action=" " style="margin: 10px;">
+    							<div class="col-md-3" >
+    								<input type="radio" name="answer" value="104" id="answer"> 104	
+    							</div>
+    							<div class="col-md-3" >
+    								<input type="radio" name="answer" value="112" id="answer"> 112
+    							</div>
+    							<div class="col-md-3" >
+    								<input type="radio" name="answer" value="124" id="answer"> 124
+    							</div>
+    							<div class="col-md-3" >
+    								<input type="radio" name="answer" value="108" id="answer"> 108
+    							</div>
+    						</form>
+    					</div>
+    				</div>
+
+    				<!-- overall map block -->
+    				<div class="col-md-4" style="border: 1px solid; padding:10px;">
+    					<div id="map2" style="height: 230px"></div>    					
+    				</div>
+
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="container">
+    		<footer id="footer" style="margin:20px;">     			
+    			<p><abbr title="Email: ">Email:</abbr> groupe@st-andrews.ac.uk<br></p>    			
+    		</footer>
+    	</div>
+    </body>
+    </html>
