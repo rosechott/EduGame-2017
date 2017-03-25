@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta charset="utf-8">
+	<title>Register</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<html lang="en">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<img src="image/Logo1.png" class="img-responsive center-block" alt="The Silk Road">
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6" style="margin:20px; padding: 20px;">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active"><a data-toggle="tab" href="#register">Register</a></li>
+					<li><a data-toggle="tab" href="#login">Login</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		
+		
+		<div class="tab-content">    
+			<div id="register" class="tab-pane fade in active">
+
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label for="firstName" class="col-sm-2 control-label">Username</label>
+						<div class="col-sm-10">
+							<input type="text" id="firstName" placeholder="Username" class="form-control" autofocus>						
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" id="email" placeholder="Email" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="password" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" id="password" placeholder="Password" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="confirm password" class="col-sm-2 control-label">Confirm Password</label>
+						<div class="col-sm-10">
+							<input type="password" id="password" placeholder="Confirm Password" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="birthDate" class="col-sm-2 control-label">Date of Birth</label>
+						<div class="col-sm-10">
+							<input type="date" id="birthDate" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3">Gender</label>
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-6">
+									<label class="radio-inline">
+										<input type="radio" id="femaleRadio" value="Female">Female
+									</label>
+								</div>
+								<div class="col-sm-6">
+									<label class="radio-inline">
+										<input type="radio" id="maleRadio" value="Male">Male
+									</label>
+								</div>
+
+							</div>
+						</div>
+					</div> 
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox">I accept <a href="#">terms</a>
+								</label>
+							</div>
+						</div>
+					</div> 
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<button type="submit" class="btn btn-primary btn-block">Register</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+
+			<div id="login" class="tab-pane fade">
+				<form class="form-horizontal" role="form">
+
+					<div class="form-group">
+						<label for="firstName" class="col-sm-2 control-label">Username</label>
+						<div class="col-sm-10">
+							<input type="text" id="firstName" placeholder="Username" class="form-control" autofocus>						
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="password" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" id="password" placeholder="Password" class="form-control">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<button type="submit" class="btn btn-primary btn-block">Log in</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+
+
+		</div>
+	</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,195 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    	<meta charset="utf-8">
+    	<title>Game</title>
+    	<link rel="stylesheet" href="css/bootstrap.css">
+    	<link rel="stylesheet" href="css/style.css">
+    	<html lang="en">
+
+    	<!--below code from https://developers.google.com/maps/documentation/javascript/examples/map-simple-->
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojfFj6bNS7s7JLzh7feU3uCtzHrBZ2o8&callback=initMap1">
+    	</script>
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojfFj6bNS7s7JLzh7feU3uCtzHrBZ2o8&callback=initMap2">
+    	</script>
+
+    	<style type="text/css">
+    		html, body {height:100%}
+    	</style>
+    	<!--above code from https://developers.google.com/maps/documentation/javascript/examples/map-simple-->
+    </head>
+
+    <body onload="initMap1(), initMap2();">
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+
+    	<script src="EduGame_Level_1.js"></script>
+    	
+    	<!-- <script src="EduGame_Level_2.js"></script> -->
+    	<!-- <script src="EduGame_Level_3.js"></script> -->
+
+    	<div class="container">
+    		<img src="image/Logo1.png" class="img-responsive center-block" alt="The Silk Road">
+    		<br/>
+    	</div>
+
+    	<!-- Navigation -->
+    	<div class="container">
+    		<nav class="navbar navbar-default navbar-fxed-top" role="navigation">
+
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse"> 
+    					<span class="sr-only">Toggle Navigation</span>
+    					<span class="icon-bar"></span> 
+    					<span class="icon-bar"></span> 
+    					<span class="icon-bar"></span> 
+    				</button> 
+    				<a href="intro.html" class="navbar-brand">The Silk Road</a> 
+    			</div>
+    			<div class="collapse navbar-collapse" id="example-navbar-collapse"> 
+    				<!-- Nav tabs -->
+    				<ul class="nav nav-tabs nav-justified">
+    					<li ><a href="intro.html">Intro</a></li>
+    					<li class="active"><a href="game.html">Game</a></li>
+    					<li><a href="rank.html">Rank</a></li>
+
+    					<!-- User Info -->
+    					<li class="dropdown">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown">  						User
+    							<span class="caret"></span>
+    						</a>
+    						<ul class="dropdown-menu" style="text-align: center;" > 			
+    							<li>Score</li>
+    							<li>Level</li>
+    							<li>Time</li>
+    							<li><a href="#">Exit</a></li>
+    						</ul>
+    					</li> 
+    				</ul>
+    			</div>
+    		</nav>
+    	</div>
+
+    	<!-- Level Intro Block-->
+    	<div class="container">
+            <div class="panel-group">
+                <div class="panel panel-default" >
+
+                    <!-- Level intro panel begins-->
+                    <div class="panel-heading">
+                        <h4 class="panel-title" style="text-align:center">
+                            <a data-toggle="collapse" href="#collapse1">
+                                Level Intro
+                            </a> 
+                        </h4>
+                    </div>
+
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body" >
+
+                            <!-- Intro of each level goes in here! -->
+
+                            <div id="#" style="font-size: 18px; padding-bottom: 10px;">
+                                On the first leg of Marco Polo’s journey, Marco, his father and his uncle traveled by boat to Acre (modern day Israel), and then traveled by camel to Hormuz (modern day Iran). 
+                            </div>
+
+                            <div id="map2" style="height: 390px; padding-bottom: 10px;">
+                            </div> 
+
+                        </div>
+                    </div>
+                    <!-- Level intro panel ends-->
+                    
+
+                    <!-- Question map panel begins -->
+                    <div id="questionMap" class="panel-heading">
+                        <h4 class="panel-title" style="text-align:center">
+                            <a data-toggle="collapse" href="#questionMap_collapse">
+                                Question Map
+                            </a> 
+                        </h4>
+                    </div>
+
+                    <div id="questionMap_collapse" class="panel-collapse collapse in" >
+                        <div class="panel-body">                  
+                            <div class="panel-body" id="map1" style="height: 390px">
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- Question map panel ends -->
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <!-- when it comes to "Shape Question", the "question panel" appears; -->
+        <script type="text/javascript">
+            $("#questionMap").hide();
+            $("#questionMap_collapse").hide(); 
+        </script>
+
+        <!-- Question related images -->
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-body">           
+                   <div class="col-md-4 col-sm-4">
+                       <img src="image/boat_level1.png" class="img-responsive center-block" alt="boat">
+                   </div>
+                   <div class="col-md-4 col-sm-4">
+                       <img src="image/boat_level1.png" class="img-responsive center-block" alt="boat">                    
+                   </div>
+                   <div class="col-md-4 col-sm-4">
+                    <img src="image/boat_level1.png" class="img-responsive center-block" alt="boat">  
+                </div>               
+            </div>
+        </div>
+    </div>
+
+    <!-- Question board -->
+    <div id="test" class=" container">
+        <div class="panel panel-default ">
+            <div class="panel-body">
+                <div class="col-md-3"> 
+                    <img src="image/1.jpg" class="img-responsive center-block" alt="small image/gif" style="vertical-align: middle;">
+                </div>
+
+
+                <div class="col-md-9">
+                  <h3>Question One:</h3>
+                  <div id="#" class="panel panel-default panel-body" style="font-size: 18px; padding:40px; text-align: justify;">
+                   Marco Polo’s traveling party had to purchase 4 camels from a trader in Acre.  They were not the only travelers that needed camels for a journey, however.  The same day that they purchased their camels, a second party purchased 40 camels and a third party purchased 8.  If the trader who owned the camels originally had 156 camels, how many camels did he finished the sales to these three parties?
+               </div>
+
+               <form action=" " style="margin: 10px;">
+                 <div class="col-md-3" >
+                    <input type="radio" name="answer" value="104" id="answer"> 104  
+                </div>
+                <div class="col-md-3" >
+                    <input type="radio" name="answer" value="112" id="answer"> 112
+                </div>
+                <div class="col-md-3" >
+                    <input type="radio" name="answer" value="124" id="answer"> 124
+                </div>
+                <div class="col-md-3" >
+                    <input type="radio" name="answer" value="108" id="answer"> 108
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- footer -->
+<div class="container">
+ <div class="panel panel-default">   
+     <div class="panel-footer text-center">			
+         <p><abbr title="Email: ">Email:</abbr> groupe@st-andrews.ac.uk<br></p>  
+     </div>
+ </div>
+</div>
+
+
+</body>
+</html>
