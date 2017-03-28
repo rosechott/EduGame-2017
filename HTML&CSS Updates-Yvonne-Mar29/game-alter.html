@@ -1,0 +1,183 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    	<meta charset="utf-8">
+    	<title>Game-alter</title>
+    	<link rel="stylesheet" href="css/bootstrap.css">
+    	<link rel="stylesheet" href="css/style.css">
+    	<html lang="en">
+
+    	<!--below code from https://developers.google.com/maps/documentation/javascript/examples/map-simple-->
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojfFj6bNS7s7JLzh7feU3uCtzHrBZ2o8&callback=initMap1">
+    	</script>
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojfFj6bNS7s7JLzh7feU3uCtzHrBZ2o8&callback=initMap2">
+    	</script>
+
+    	<style type="text/css">
+    		html, body {height:100%}
+    	</style>
+    	<!--above code from https://developers.google.com/maps/documentation/javascript/examples/map-simple-->
+
+    	<!-- google font -->
+    	<style>
+    		@import url('https://fonts.googleapis.com/css?family=Nova Flat');
+    		@import url('https://fonts.googleapis.com/css?family=Lobster Two');
+    		@import url('https://fonts.googleapis.com/css?family=Righteous');
+    		@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+    		@import url('https://fonts.googleapis.com/css?family=New Rocker');
+    		@import url('https://fonts.googleapis.com/css?family=Taviraj');    
+    		@import url('https://fonts.googleapis.com/css?family=Fjalla One');    		
+    	</style>
+
+    </head>
+
+    <body onload="initMap1(), initMap2();">
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="EduGame_Level_1.js"></script>
+    	<script src="js/160007681.js"></script>    	
+    	
+    	<div class="container background" >
+    		<div class="container">
+    			<img src="image/Logo1.png" class="img-responsive center-block" alt="The Silk Road">
+    		</div>
+
+    		<!-- Navigation -->
+    		<div class="container">
+    			<nav class="navbar navbar-default navDefault" role="navigation">
+    				<div class="navbar-header" >
+    					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse"> 
+    						<span class="sr-only">Toggle Navigation</span>
+    						<span class="icon-bar"></span> 
+    						<span class="icon-bar"></span> 
+    						<span class="icon-bar"></span> 
+    					</button> 
+    					<a href="intro.html" class="navbar-brand" ><span class="navBrand" >The Silk Road</span></a> 
+    				</div>
+
+
+    				<div class="collapse navbar-collapse navPill" id="example-navbar-collapse"> 
+    					<!-- Nav pills -->
+    					<ul class="nav nav-pills nav-justified ">
+
+    						<li class="nav1" ><a href="intro.html">Intro</a></li>
+    						<li class="nav2"><a href="game-alter.html">Game</a></li>
+    						<li class="nav3"><a href="rank.html">Rank</a></li>
+
+    						<!-- User Info -->
+    						<li class="dropdown nav4">
+    							<a href="#" class="dropdown-toggle" data-toggle="dropdown">  						User
+    								<span class="caret"></span>
+    							</a>
+    							<ul class="dropdown-menu" style="text-align: center;" >    								
+    								<li><a href="#">Exit</a></li>
+    							</ul>
+    						</li> 
+    					</ul>
+    				</div>
+    			</nav>
+    		</div>
+
+    		<!-- Level Intro Block-->
+    		<div class="container">
+    			<!-- Level intro panel begins-->
+    			<div class="pannelTitle">    				
+    				<a data-toggle="collapse" href="#collapse1">
+    					Level Introduction
+    				</a>    				
+    			</div>
+
+    			<div id="collapse1" class="panel-collapse collapse in">
+    				<div class="panelBody">
+    					<!-- Intro of each level goes in here! -->
+    					<div >
+    						<span class="firstLetter"> O</span>n the first leg of Marco Polo’s journey, Marco, his father and his uncle traveled by boat to Acre (modern day Israel), and then traveled by camel to Hormuz (modern day Iran). 
+    					</div>
+    					<br>
+    					<div id="map2"></div> 
+    				</div>
+    			</div>
+    			<!-- Level intro panel ends-->
+
+
+    			<!-- Question map panel begins -->
+    			<div class="pannelTitle">    				
+    				<a data-toggle="collapse" href="#questionMap_collapse">
+    					Question Map
+    				</a>     				
+    			</div>
+
+    			<div id="questionMap_collapse" class="panel-collapse collapse in" >
+    				<div class="panelBody">                  
+    					<div id="map1"></div> 
+    				</div>
+    			</div>
+    			<!-- Question map panel ends -->
+
+
+    			<!-- Question img panel begins -->
+    			<div class="pannelTitle">    				
+    				<a data-toggle="collapse" href="#questionImg_collapse">
+    					Question Images
+    				</a>     				
+    			</div>
+
+    			<div id="questionImg_collapse" class="panel-collapse collapse in" >
+    				<div class="panelBody bg1">   
+    					<img src="image/marco.png" class="ab img-responsive center-block"  alt="#">
+
+    					<!-- style -->
+    					<style type="text/css">
+    						div.bg1{
+    							background-image: url("image/Hormuz_level1.png");
+    						}
+    					</style>   
+    				</div>
+    			</div>
+    			<!-- Question img panel ends -->   
+
+    		</div>    		
+
+    		<!-- Question board -->
+    		<div class=" container" style="padding-top: 30px;">
+    			<div class="col-md-3"> 
+    				<img src="image/marco.png" class="img-responsive center-block" alt="#" >
+    			</div>
+    			<div class="col-md-9">
+    				<div class="questionNum">Question One:</div>
+    				<div class="questionText">
+    					Marco Polo’s traveling party had to purchase 4 camels from a trader in Acre.  They were not the only travelers that needed camels for a journey, however.  The same day that they purchased their camels, a second party purchased 40 camels and a third party 
+    				</div>
+
+    				<form action=" ">
+    					<div class="col-md-3" >
+    						<input type="radio" name="answer" value="104" id="answer"> 104  
+    					</div>
+    					<div class="col-md-3" >
+    						<input type="radio" name="answer" value="112" id="answer"> 112
+    					</div>
+    					<div class="col-md-3" >
+    						<input type="radio" name="answer" value="124" id="answer"> 124
+    					</div>
+    					<div class="col-md-3" >
+    						<input type="radio" name="answer" value="108" id="answer"> 108
+    					</div>
+    				</form>
+    			</div>   				
+    		</div>
+
+
+
+    		<!-- footer -->
+    		<footer>
+    			<abbr title="Email: ">Email:</abbr>groupe@st-andrews.ac.uk<br>
+    			<a href="http://www.w3school.com.cn/" target="_blank">©2017 All Rights Reserved.</a>
+    		</footer>
+
+    	</div>
+
+    	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </body>
+    </html>

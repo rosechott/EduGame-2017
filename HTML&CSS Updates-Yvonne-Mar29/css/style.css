@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+
+img.ab {
+	width: 200px;
+	height: 200px;
+	background: red;
+	position: relative;
+	-webkit-animation: mymove 3s infinite ; /* Safari 4.0 - 8.0 */
+	animation: mymove 3s infinite;
+} 
+/* Standard syntax */
+@keyframes mymove {
+	0%   {left: -200px;}
+	100% {left: 200px;}				
+}
+
+div.bg1{
+	background-image: url("image/Hormuz_level1.png");
+}
+
+
+
+.nav1{
+	flex:1;
+	background: Aquamarine; 	
+}
+.nav2{
+	flex:1;
+	background: #FFCC33  ;
+}
+.nav3{
+	flex:1;
+	background: #99FFFF  ;
+}
+.nav4{
+	flex:1;
+	background: #FAEBD7  ;
+}
+
+.navPill
+{
+	color:white;
+	text-align:center;     
+	font-family: "Fjalla One";  
+	text-align: center;
+	font-size: 40px;
+
+}
+.navDefault{
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: yellow;	
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.navbarBrand {
+	color:white;
+	text-align:center;     
+	font-family: "Fjalla One";  
+	text-align: center;
+	font-size: 40px;
+}
+
+.background{
+	background-color: #F5F6CE;
+	border-style: solid;
+	/* border-radius: 20px; */
+	border-width: 2px;
+	border-color: grey;	
+}
+
+
+footer
+{  
+	background-color:black;
+	color:white;
+	text-align:center;  
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;	
+}
+
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: red; /* Set a background color */
+	opacity: 0.7;
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+	opacity: 0.7;
+	background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+.pannelTitle{
+	text-align:center;
+	border-bottom-color: #ddd;
+	border-bottom-style: dashed;
+	font-family: Nova Flat;
+	font-size: 30px;
+}
+
+.pannelTitle:hover{
+	font-family:"Righteous","Taviraj";
+
+}
+
+.panelBody{
+	padding-top: 20px;
+	padding-left: 50px;	
+	padding-right: 50px;
+	padding-bottom: 50px;
+	font-size: 24px;
+	font-family: Nova Flat;
+	text-align: justify;
+}
+
+.questionText{
+	border-width: 1px;
+	border-style: dashed;
+	border-color: grey;
+	padding: 40px;	
+	font-size: 18px;
+	font-family: Comfortaa;
+	text-align: justify;	
+}
+
+.firstLetter {
+	color: red; 
+	font-family: Nova Flat,serif;
+	padding-left: 50px;
+}
+
+#map1{
+	height: 350px; 
+}
+
+#map2{
+	height: 350px; 
+}
+
+form{
+	padding: 20px;
+}
+
+.questionNum{	
+	padding: 10px;	
+	font-size: 24px;
+	font-family: New Rocker;
+
+}
+
+img{
+	padding: 40px;
+}
+
+.navBrand{	
+	text-align:center;     
+	font-family: "Fjalla One";  
+	text-align: center;
+	font-size: 40px;	
+}
+
